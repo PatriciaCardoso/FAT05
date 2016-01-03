@@ -1,0 +1,30 @@
+package exercicio5;
+import java.util.Scanner;//importando a classe para receber dados do usuário
+
+public class Retangulo {
+	
+	//declaração de metodo principal	
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);//cria o objeto para obter a entrada atraves da janela de comando
+		//permite ler a entrada do teclado atraves do System.in
+		
+		float Largura;//declaração da primeira variavel a ser informada
+		int Comprimento;//declaração da segunda variavel a ser informada
+		float Resultado;//declaração de variavel de resultado Largura*comprimento
+		
+	
+		
+	System.out.println("Informe a Largura:");//exibição de texto - prompt
+	Largura = entrada.nextFloat();// lê o valor de Largura fornecido pelo usuário e aguarda até que pressione a tecla Enter
+	
+	System.out.println("Informe o Comprimento:");//exibição de texto - prompt
+	Comprimento = entrada.nextInt();// lê o valor de Comprimento fornecido pelo usuário e aguarda até que pressione a tecla Enter
+	
+	Resultado = Largura*Comprimento;//multiplicação dos valores a serem exibidos no resultado
+	
+	System.out.println("Resultado: " +Resultado);
+	
+	
+	}//fim de metodo principal
+
+}//fim da classe
